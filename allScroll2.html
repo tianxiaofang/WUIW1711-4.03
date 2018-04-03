@@ -255,8 +255,14 @@
 <script>
     let about=document.querySelector(".about");
     let aboutall=document.querySelector(".about_all");
+    let n=0;
     about.onclick=function(){
-        aboutall.style.display="block";
+        n++;
+        if(n%2===0){
+            aboutall.style.display="block";
+        }else{
+            aboutall.style.display="none";
+        }
     };
 </script>
 </html>
